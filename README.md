@@ -4,6 +4,8 @@ Final project for AAI612: Deep Learning & its Applications.
 
 Every 20 trading days of a stock are drawn as a small black and white price chart, and a ConvNet predicts if the price will be higher or lower 5 trading days later. The ConvNet is compared with simple baselines, an LSTM that reads the same data as numbers, and a frozen pretrained ResNet50. The chart format follows Jiang, Kelly and Xiu, "(Re-)Imag(in)ing Price Trends", The Journal of Finance, 2023.
 
+The notebook has two rounds. Round 1 predicts up or down in 5 days. Round 2 predicts if a stock beats the median of the 50 stocks over the next 5 or 20 days, and trains the ConvNet with batch normalization, leaky relu and a smaller learning rate like the paper.
+
 ## Run it
 
 Open the notebook in Google Colab with a GPU runtime (Runtime > Change runtime type > T4 GPU) and run all cells:
