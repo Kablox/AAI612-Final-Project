@@ -6,6 +6,8 @@ Every 20 trading days of a stock are drawn as a small black and white price char
 
 The notebook has two rounds. Round 1 predicts up or down in 5 days. Round 2 predicts if a stock beats the median of the 50 stocks over the next 5 or 20 days, and trains the ConvNet with batch normalization, leaky relu and a smaller learning rate like the paper.
 
+No model predicted the future better than chance in either round. A sanity check on a label that is visible in the charts shows the ConvNet does read them correctly, so the result comes from the market and not from a bug.
+
 ## Run it
 
 Open the notebook in Google Colab with a GPU runtime (Runtime > Change runtime type > T4 GPU) and run all cells:
